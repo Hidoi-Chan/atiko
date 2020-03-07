@@ -1,0 +1,551 @@
+html,
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    color: #2d3950;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-family: 'Lato', sans-serif;
+}
+
+button {
+    border: none;
+    outline: none;
+    background-color: #15a4fa;
+    color: #fff;
+    cursor: pointer;
+    transition: 300ms ease;
+}
+
+button:hover {
+    background-color: #5fc3ff;
+}
+
+button:active {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+input,
+textarea {
+    border: none;
+    outline: none;
+    background: none;
+    border: #999 solid 1px;
+    border-radius: 3px;
+    padding: 21px;
+    margin: 10px 0;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    transition: 400ms ease;
+    color: #fff;
+}
+
+input::placeholder {
+    color: #999999;
+}
+
+input:focus,
+textarea:focus {
+    border: #fff solid 1px;
+    color: #fff;
+}
+
+input:focus::placeholder {
+    color: #fff;
+}
+
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+header,
+footer {
+    background-color: #f6f9f9;
+}
+
+header>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0 10px 0;
+}
+
+header .tel {
+    font-size: 30px;
+}
+
+.lead_block {
+    background: #676e79 url(images/bunner.jpg) no-repeat center;
+    height: 800px;
+    display: flex;
+    color: #fff;
+}
+
+.lead_block .lead_block_content {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lead_block .lead_block_content h1 {
+    font-size: 120px;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+
+.lead_block .lead_block_content hr {
+    border: none;
+    background-color: #15a4fa;
+    color: #15a4fa;
+    height: 3px;
+    width: 600px;
+    margin: 0;
+}
+
+.lead_block .lead_block_content h2 {
+    font-size: 30px;
+    padding: 20px 0;
+}
+
+.lead_block .lead_block_content button {
+    margin: 25px 0;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 20px 30px;
+}
+
+main .text_content {
+    background-color: #f6f9f9;
+    text-align: center;
+    padding: 80px 0 60px 0;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+main .text_content p {
+    max-width: 1150px;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+main .advantages {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .advantages>div {
+    padding: 70px 0;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+main .advantages .icon_block {
+    width: 100px;
+    height: 100px;
+    background: #48baff;
+    background: linear-gradient(to right, #48baff 50%, #5fc3ff 50%);
+    display: flex;
+}
+
+main .advantages .icon_block i {
+    margin: auto;
+    color: #fff;
+    font-size: 55px;
+}
+
+main .advantages h3 {
+    font-size: 22px;
+    font-weight: 400;
+    margin: 40px 0 25px 0;
+}
+
+main .advantages p,
+main .projects p {
+    font-size: 14px;
+}
+
+main .projects {
+    background-color: #f6f9f9;
+    padding-top: 80px;
+}
+
+main .projects p {
+    text-align: center;
+}
+
+main .projects .portfolio {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 80px 0 90px 0;
+}
+
+main .projects .portfolio>div {
+    margin: 30px auto 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+main .projects .portfolio>div .portfolio_links {
+    position: absolute;
+    transition: 500ms ease;
+    opacity: .8;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    background-color: #15a4fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .projects .portfolio>div:hover .portfolio_links {
+    top: 0;
+}
+
+.portfolio_links>div,
+.portfolio_links>a {
+    width: 45px;
+    height: 45px;
+    border: #fff solid 1px;
+    border-radius: 4px;
+    margin: 5px;
+    color: #fff;
+    display: flex;
+    cursor: pointer;
+}
+
+.portfolio_links i {
+    margin: auto;
+    font-size: 20px;
+    opacity: 1;
+    transition: 250ms ease;
+}
+
+.portfolio_links>div:hover i,
+.portfolio_links>a:hover i {
+    font-size: 24px;
+}
+
+.form_block {
+    height: 700px;
+    background: #2c364b url(images/bunner_form.jpg) no-repeat center;
+    position: relative;
+    color: #fff;
+}
+
+.form_block:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(44, 54, 75, .8);
+}
+
+.form_container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 70px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form_container p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #999999;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 30px;
+}
+
+form>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+#confirm+label {
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+}
+
+#confirm+label>div {
+    background: #999;
+    border-radius: 3px;
+    height: 20px;
+    width: 20px;
+    margin-right: 15px;
+}
+
+#confirm+label>div i {
+    display: none;
+    color: #2d3950;
+    font-size: 16px;
+}
+
+#confirm:checked+label>div i {
+    display: block;
+}
+
+form button {
+    font-size: 18px;
+    border-radius: 3px;
+    padding: 15px 30px;
+}
+
+footer {
+    font-size: 14px;
+    color: #999;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.social_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social_wrapper .social {
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3b5998;
+    margin: 0 3px;
+}
+
+.social_wrapper .twitter {
+    background-color: #55acee;
+}
+
+.social_wrapper .gplus {
+    background-color: #dd4b39;
+}
+
+.social_wrapper .linkedin {
+    background-color: #0976b4;
+}
+
+.popup {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0px;
+    display: none;
+    z-index: 999;
+}
+
+.popup_form {
+    margin: 50px auto 0 auto;
+    max-width: 600px;
+    padding: 10px;
+    background-color: #f6f9f9;
+    color: #2b354a;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #000;
+    position: relative;
+}
+
+.popup_form input,
+.popup_form textarea {
+    color: #44516d;
+}
+
+.popup_form input:focus,
+.popup_form textarea:focus {
+    border: #2b354a solid 1px;
+    color: #2b354a;
+}
+
+.popup_form input:focus::placeholder {
+    color: #44516d;
+}
+
+.popup_form button {
+    max-width: 160px;
+    margin: 10px auto;
+}
+
+#popup_close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+    transition: 300ms ease;
+}
+
+#popup_close:hover {
+    opacity: 1;
+}
+
+#popup_close:before,
+#popup_close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #2d3950;
+}
+
+#popup_close:before {
+    transform: rotate(45deg);
+}
+
+#popup_close:after {
+    transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 1280px) {
+    body {
+        max-width: 1280px;
+    }
+
+    header .container,
+    footer .container {
+        padding: 10px;
+    }
+
+    main .text_content p {
+        padding: 0 10px;
+    }
+
+    main .advantages h3 {
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .popup_form {
+        margin: 20px auto 0 auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .lead_block .lead_block_content hr {
+        max-width: 560px;
+    }
+
+    main .projects .portfolio {
+        padding: 30px 0;
+    }
+
+    .form_container {
+        padding: 70px 20px 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    header .tel {
+        font-size: 24px;
+    }
+
+    .lead_block {
+        background: #676e79 url(images/bunner_mobile.jpg) no-repeat center;
+        height: 400px;
+    }
+
+    .lead_block .lead_block_content h1 {
+        font-size: 80px;
+    }
+
+    .lead_block .lead_block_content hr {
+        max-width: 300px;
+    }
+
+    main .text_content {
+        padding: 30px 0;
+    }
+
+    main .advantages {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main .advantages>div {
+        padding: 20px 0;
+        max-width: 310px;
+    }
+
+    main .advantages h3 {
+        font-size: 20px;
+    }
+
+    main .projects {
+        padding-top: 30px;
+    }
+    .popup_form h2 {
+        font-size: 30px;
+    }
+
+    /* main .projects .portfolio>div>img {
+        max-width: 310px;
+    } */
+
+    .form_container {
+        padding: 20px;
+    }
+
+    .form_container form>div {
+        flex-direction: column;
+    }
+
+    .form_container form>div>div {
+        padding-bottom: 20px;
+    }
+
+    .form_container form>div>div span {
+        font-size: 16px;
+    }
+}
